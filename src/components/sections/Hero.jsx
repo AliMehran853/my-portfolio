@@ -134,7 +134,7 @@ function Hero() {
                                 {/* Image Container */}
                                 <div className="relative rounded-2xl overflow-hidden m-px h-[calc(100%-2px)]">
                                     <img
-                                        src="/mehran.png"
+                                        src="/mehran.webp"
                                         alt={t('common.developerImageAlt')}
                                         className="w-full h-full object-cover"
                                     />
