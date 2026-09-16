@@ -1,0 +1,472 @@
+@import "tailwindcss";
+
+/* =========================================================
+   Fonts
+========================================================= */
+
+/* =========================================================
+   English — Orbitron
+   Major headings / visual headings
+========================================================= */
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/fonts/enFonts/Orbitron-Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/fonts/enFonts/Orbitron-Medium.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/fonts/enFonts/Orbitron-SemiBold.ttf")
+        format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/fonts/enFonts/Orbitron-Bold.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/fonts/enFonts/Orbitron-ExtraBold.ttf")
+        format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/fonts/enFonts/Orbitron-Black.ttf")
+        format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   English — Space Grotesk
+   Main UI / body / navigation / buttons
+========================================================= */
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("./assets/fonts/enFonts/SpaceGrotesk-Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("./assets/fonts/enFonts/SpaceGrotesk-Medium.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("./assets/fonts/enFonts/SpaceGrotesk-SemiBold.ttf")
+        format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("./assets/fonts/enFonts/SpaceGrotesk-Bold.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   English — DM Mono
+   Technical / numbers / stats / metadata
+========================================================= */
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("./assets/fonts/enFonts/DMMono-Light.ttf")
+        format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("./assets/fonts/enFonts/DMMono-Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("./assets/fonts/enFonts/DMMono-Medium.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   Persian — Vazirmatn
+========================================================= */
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("./assets/fonts/faFonts/Vazirmatn-Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("./assets/fonts/faFonts/Vazirmatn-Medium.ttf")
+        format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("./assets/fonts/faFonts/Vazirmatn-SemiBold.ttf")
+        format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("./assets/fonts/faFonts/Vazirmatn-Bold.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("./assets/fonts/faFonts/Vazirmatn-ExtraBold.ttf")
+        format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   Base Styles
+========================================================= */
+
+@layer base {
+
+    html {
+        scroll-behavior: smooth;
+        scrollbar-gutter: stable;
+    }
+
+
+    /* =====================================================
+       English Typography
+    ===================================================== */
+
+    html[lang="en"] body {
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    /* Main visual headings */
+    html[lang="en"] h1,
+    html[lang="en"] h2 {
+        font-family: "Orbitron", sans-serif;
+        letter-spacing: -0.02em;
+    }
+
+    /* Card / secondary headings */
+    html[lang="en"] h3 {
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    /*
+     * Tailwind's existing font-mono utility
+     * is redirected to DM Mono in English.
+     */
+    html[lang="en"] .font-mono {
+        font-family: "DM Mono", monospace;
+    }
+
+
+    /* =====================================================
+       Persian Typography
+    ===================================================== */
+
+    html[lang="fa"] body {
+        font-family: "Vazirmatn", sans-serif;
+    }
+
+    html[lang="fa"] h1,
+    html[lang="fa"] h2,
+    html[lang="fa"] h3,
+    html[lang="fa"] h4,
+    html[lang="fa"] h5,
+    html[lang="fa"] h6 {
+        font-family: "Vazirmatn", sans-serif;
+        letter-spacing: 0;
+    }
+
+    /*
+     * Keep technical numeric elements
+     * readable inside Persian mode.
+     */
+    html[lang="fa"] .font-mono {
+        font-family: "Vazirmatn", sans-serif;
+    }
+
+
+    /* =====================================================
+       Body
+    ===================================================== */
+
+    body {
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+
+    /* =====================================================
+       Typography Utilities
+    ===================================================== */
+
+    /*
+     * Explicit display font utility.
+     * Can be used later for special headings.
+     */
+    .font-display {
+        font-family: "Orbitron", sans-serif;
+    }
+
+    /*
+     * Explicit technical font utility.
+     */
+    .font-mono-tech {
+        font-family: "DM Mono", monospace;
+    }
+
+
+    /* =====================================================
+       WebKit Scrollbar
+       Chrome / Edge / Safari
+    ===================================================== */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+            180deg,
+            #80ff69,
+            #6fe047
+        );
+        border-radius: 9999px;
+        border: 2px solid #0a0a0a;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+            180deg,
+            #a8ff8d,
+            #5bc92e
+        );
+    }
+
+
+    /* =====================================================
+       Firefox
+    ===================================================== */
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #6fe047 #0a0a0a;
+    }
+
+
+    /* =====================================================
+       Text Selection
+    ===================================================== */
+
+    ::selection {
+        background: rgba(110, 224, 71, 0.25);
+        color: #fff;
+    }
+}
+
+
+/* =========================================================
+   Animations
+========================================================= */
+
+@keyframes pulseSoft {
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes clockBackdrop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes clockPop {
+    from {
+        opacity: 0;
+        transform: translateY(-12px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================================================
+   Animation Utilities
+========================================================= */
+
+@layer utilities {
+
+    .animate-clock-backdrop {
+        animation: clockBackdrop 250ms ease-out;
+    }
+
+    .animate-clock-pop {
+        animation: clockPop 350ms cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+    }
+}
+
+
+/* =========================================================
+   Custom Utilities
+========================================================= */
+
+@layer utilities {
+
+    /* =====================================================
+       Hide Scrollbar
+    ===================================================== */
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* =====================================================
+       Soft Pulse
+    ===================================================== */
+
+    .animate-pulse-soft {
+        animation: pulseSoft 3s ease-in-out infinite;
+    }
+
+
+    /* =====================================================
+       Slow Spin
+    ===================================================== */
+
+    .animate-spin-slow {
+        animation: spinSlow 8s linear infinite;
+    }
+
+
+    /* =====================================================
+       Line Clamp
+    ===================================================== */
+
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}

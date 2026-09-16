@@ -1,0 +1,38 @@
+export const testimonials = [
+    {
+        id: 1,
+        nameKey: 'testimonials.items.item1.name',
+        roleKey: 'testimonials.items.item1.role',
+        companyKey: 'testimonials.items.item1.company',
+        image: '/images/testimonials/saramechel.jpg',
+        quoteKey: 'testimonials.items.item1.quote',
+        rating: 5,
+    },
+    {
+        id: 2,
+        nameKey: 'testimonials.items.item2.name',
+        roleKey: 'testimonials.items.item2.role',
+        companyKey: 'testimonials.items.item2.company',
+        image: '/images/testimonials/jonson.jpg',
+        quoteKey: 'testimonials.items.item2.quote',
+        rating: 5,
+    },
+    {
+        id: 3,
+        nameKey: 'testimonials.items.item3.name',
+        roleKey: 'testimonials.items.item3.role',
+        companyKey: 'testimonials.items.item3.company',
+        image: '/images/testimonials/emeli.jpg',
+        quoteKey: 'testimonials.items.item3.quote',
+        rating: 5,
+    },
+    {
+        id: 4,
+        nameKey: 'testimonials.items.item4.name',
+        roleKey: 'testimonials.items.item4.role',
+        companyKey: 'testimonials.items.item4.company',
+        image: '/images/testimonials/taqwa photo.jpg',
+        quoteKey: 'testimonials.items.item4.quote',
+        rating: 5,
+    },
+];
