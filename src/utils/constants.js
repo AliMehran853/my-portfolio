@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
 
     location: 'Kabul, Afghanistan',
 
-    resume: '/resome.pdf',
+    resume: '/mehran_CV.pdf',
 };
 
 
