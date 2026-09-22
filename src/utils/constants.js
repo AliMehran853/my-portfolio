@@ -1,24 +1,20 @@
 export const PERSONAL_INFO = {
     name: 'Ali Mehran',
-
     email: 'amehran0007@gmail.com',
-
     location: 'Kabul, Afghanistan',
-
     resume: '/mehran_CV.pdf',
 };
 
 
 export const SOCIAL_LINKS = {
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
+    github: 'https://github.com/AliMehran853',
+    linkedin: 'https://www.linkedin.com/in/ali-mehran-48abb3397',
+    twitter: '',
     whatsapp: 'https://wa.me/93778765853',
 };
 
 
-// Temporary backward compatibility
-// Some existing components still use SOCIAL_LINKES.
+// Backward compatibility
 export const SOCIAL_LINKES = SOCIAL_LINKS;
 
 

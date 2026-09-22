@@ -1,100 +1,101 @@
 export const projects = [
     {
         id: 1,
-        titleKey: 'projects.items.modernReact.title',
-        descriptionKey: 'projects.items.modernReact.description',
-        image: '/images/projects/internet.jpg',
-        categoryKey: 'webApps',
+        titleKey: 'projects.items.khazane.title',
+        descriptionKey: 'projects.items.khazane.description',
+        image: '/images/projects/1.webp',
+        categoryKey: 'pwa',
         technologies: [
             'React',
             'Vite',
             'Tailwind CSS',
-            'JavaScript',
+            'Dexie',
+            'ApexCharts',
+            'PWA',
+            'i18n',
+            'Jalali Date',
         ],
-        highlightKey: 'projects.items.modernReact.highlight',
+        highlightKey: 'projects.items.khazane.highlight',
+        demoUrl: 'https://khazane-steel.vercel.app',
+        githubUrl: '',
     },
 
     {
         id: 2,
-        titleKey: 'projects.items.landingPage.title',
-        descriptionKey: 'projects.items.landingPage.description',
-        image: '/images/projects/life-without-technology.jpeg',
-        categoryKey: 'webApps',
-        technologies: [
-            'React',
-            'Vite',
-            'Tailwind CSS',
-        ],
-        highlightKey: 'projects.items.landingPage.highlight',
-    },
-
-    {
-        id: 3,
-        titleKey: 'projects.items.interactiveReact.title',
-        descriptionKey: 'projects.items.interactiveReact.description',
-        image: '/images/projects/Learning-management-system-LMS-LearnPac-744x467.jpg',
-        categoryKey: 'webApps',
-        technologies: [
-            'React',
-            'JavaScript',
-            'Tailwind CSS',
-            'GSAP',
-        ],
-        highlightKey: 'projects.items.interactiveReact.highlight',
-    },
-
-    {
-        id: 4,
-        titleKey: 'projects.items.responsiveDashboard.title',
-        descriptionKey: 'projects.items.responsiveDashboard.description',
-        image: '/images/projects/Legal_Tech_Visual.jpg',
-        categoryKey: 'webApps',
+        titleKey: 'projects.items.storeDashboard.title',
+        descriptionKey: 'projects.items.storeDashboard.description',
+        image: '/images/projects/4.webp',
+        categoryKey: 'pwa',
         technologies: [
             'React',
             'Tailwind CSS',
             'ApexCharts',
-            'JavaScript',
+            'i18n',
+            'Jalali Date',
+            'PWA',
+            'Lucide React',
         ],
-        highlightKey:
-            'projects.items.responsiveDashboard.highlight',
+        highlightKey: 'projects.items.storeDashboard.highlight',
+        demoUrl: 'https://dashboard-tau-rosy-72.vercel.app',
+        githubUrl: '',
+    },
+
+    {
+        id: 3,
+        titleKey: 'projects.items.taqiTaqwa.title',
+        descriptionKey: 'projects.items.taqiTaqwa.description',
+        image: '/images/projects/6.webp',
+        categoryKey: 'client',
+        technologies: [
+            'React',
+            'Tailwind CSS',
+            'i18n',
+            'Jalali Date',
+            'Lucide React',
+        ],
+        highlightKey: 'projects.items.taqiTaqwa.highlight',
+        demoUrl: 'https://t-taqwa-website.vercel.app',
+        githubUrl: '',
+    },
+
+    {
+        id: 4,
+        titleKey: 'projects.items.abdullahFoundation.title',
+        descriptionKey: 'projects.items.abdullahFoundation.description',
+        image: '/images/projects/3.webp',
+        categoryKey: 'client',
+        technologies: [
+            'React',
+            'Vite',
+            'Tailwind CSS',
+            'Lucide React',
+        ],
+        highlightKey: 'projects.items.abdullahFoundation.highlight',
+        demoUrl: 'https://abdullah-foundation.vercel.app',
+        githubUrl: '',
     },
 
     {
         id: 5,
-        titleKey: 'projects.items.reusableComponents.title',
-        descriptionKey:
-            'projects.items.reusableComponents.description',
-        image: '/images/projects/sending-emails.png',
-        categoryKey: 'uiComponents',
+        titleKey: 'projects.items.ipLocator.title',
+        descriptionKey: 'projects.items.ipLocator.description',
+        image: '/images/projects/5.webp',
+        categoryKey: 'tools',
         technologies: [
-            'React',
-            'Tailwind CSS',
-            'Lucide React',
+            'Python',
+            'ipinfo.io API',
+            'Folium',
+            'Colorama',
         ],
-        highlightKey:
-            'projects.items.reusableComponents.highlight',
-    },
-
-    {
-        id: 6,
-        titleKey: 'projects.items.animatedExperience.title',
-        descriptionKey:
-            'projects.items.animatedExperience.description',
-        image: '/images/projects/shutterstock_107997179.jpg',
-        categoryKey: 'uiComponents',
-        technologies: [
-            'React',
-            'GSAP',
-            'Tailwind CSS',
-            'JavaScript',
-        ],
-        highlightKey:
-            'projects.items.animatedExperience.highlight',
+        highlightKey: 'projects.items.ipLocator.highlight',
+        demoUrl: '',
+        githubUrl: 'https://github.com/AliMehran853/IP--Locator',
     },
 ];
 
 export const categories = [
     'all',
-    'webApps',
-    'uiComponents',
+    'pwa',
+    'client',
+    'tools',
 ];

@@ -17,7 +17,7 @@ import {
 import { useTranslation } from 'react-i18next';
 
 import FadeIn from '../animations/FadeIn';
-import { PERSONAL_INFO, SOCIAL_LINKES } from '../../utils/constants';
+import { PERSONAL_INFO, SOCIAL_LINKS } from '../../utils/constants';
 
 function Contact() {
 
@@ -312,7 +312,7 @@ function Contact() {
                                 </p>
 
                                 <div className="flex flex-wrap gap-3">
-                                    {Object.entries(SOCIAL_LINKES).map(
+                                    {Object.entries(SOCIAL_LINKS).map(
                                         ([platform, url]) => {
                                             const Icon =
                                                 socialIcons[platform];

@@ -152,67 +152,59 @@ const enTranslation = {
         title: 'Featured Projects',
 
         description:
-            'A selection of frontend projects I have built while learning and working with modern web technologies.',
+            'A selection of real-world projects I have designed and built — from bilingual PWAs to client websites and developer tools.',
 
         categories: {
             all: 'All',
-            webApps: 'Web Apps',
-            uiComponents: 'UI Components',
+            pwa: 'PWA Apps',
+            client: 'Client Work',
+            tools: 'Tools & Experiments',
         },
 
         items: {
-            modernReact: {
-                title: 'Modern React Web Application',
+            khazane: {
+                title: 'Khazane — Personal Finance PWA',
 
                 description:
-                    'A responsive frontend application built with React and reusable components, with a focus on clean structure, consistent UI, and a smooth experience across different screen sizes.',
+                    'An installable Progressive Web App for tracking daily income and expenses. Features offline-first storage, PDF export, smart category insights, and ApexCharts analytics — all in a Persian-first, RTL interface.',
 
-                highlight: 'Responsive frontend',
+                highlight: 'PWA · Offline-first',
             },
 
-            landingPage: {
-                title: 'Responsive Landing Page',
+            storeDashboard: {
+                title: 'Store Management Dashboard',
 
                 description:
-                    'A modern landing page designed with responsive layouts, clear visual hierarchy, and reusable sections that adapt smoothly across mobile, tablet, and desktop.',
+                    'A bilingual (FA/EN) POS-style dashboard for retail shops. Tracks cash and credit sales, inventory, customers, and profit/loss in real time — with ApexCharts visualization and Jalali/Gregorian calendars.',
 
-                highlight: 'Mobile & desktop ready',
+                highlight: 'Bilingual PWA',
             },
 
-            interactiveReact: {
-                title: 'Interactive React Interface',
+            taqiTaqwa: {
+                title: 'Taqi Taqwa — Agriculture & Nature Website',
 
                 description:
-                    'A responsive frontend interface built with reusable React components, modern styling, and smooth animations to create a more engaging browsing experience.',
+                    'A bilingual client website centered on farming, nature, and sustainable living. Features a cinematic hero, live clock, Persian calendar, project gallery, notes, and smooth scroll animations.',
 
-                highlight: 'Interactive UI',
+                highlight: 'Bilingual · Client work',
             },
 
-            responsiveDashboard: {
-                title: 'Responsive Dashboard',
+            abdullahFoundation: {
+                title: 'Abdullah Foundation — Non-Profit Website',
 
                 description:
-                    'A structured dashboard interface featuring reusable components, responsive layouts, and data visualization for a clear and organized experience across different screen sizes.',
+                    'Official website for a charitable foundation in India supporting underprivileged children through education, food, shelter, and healthcare. Donation-focused UI with prominent CTAs and trust-building impact metrics.',
 
-                highlight: 'Data visualization',
+                highlight: 'Donation-focused',
             },
 
-            reusableComponents: {
-                title: 'Reusable UI Components',
+            ipLocator: {
+                title: 'IP Information & Location Mapper',
 
                 description:
-                    'A collection of reusable frontend components designed to keep interfaces consistent, maintainable, and easier to extend across different responsive web projects.',
+                    'A Python CLI tool that fetches full IP intelligence from ipinfo.io and renders the location on an interactive Folium map. Features colored terminal output and robust error handling — built for OSINT and network analysis.',
 
-                highlight: 'Reusable UI',
-            },
-
-            animatedExperience: {
-                title: 'Animated Frontend Experience',
-
-                description:
-                    'A responsive frontend experience enhanced with smooth animations and scroll-based interactions to add motion while keeping the interface clear and easy to use.',
-
-                highlight: 'Motion & interaction',
+                highlight: 'Python · OSINT',
             },
         },
     },
@@ -276,42 +268,46 @@ const enTranslation = {
     // ==========================================
     // Testimonials
     // ==========================================
-        // ==========================================
-    // Testimonials
-    // ==========================================
     testimonials: {
         badge: 'Testimonials',
         title: 'What Others Say',
-        description: 'Feedback from people I have worked with and projects I have contributed to.',
+        description:
+            'Feedback from people I have worked with and projects I have contributed to.',
         comingSoon: 'Testimonials Coming Soon',
-        comingSoonDescription: 'This section will feature genuine feedback from clients, collaborators, or people I have worked with on real projects.',
+        comingSoonDescription:
+            'This section will feature genuine feedback from clients, collaborators, or people I have worked with on real projects.',
         items: {
             item1: {
                 name: 'Sara Mitchell',
                 role: 'CTO',
                 company: 'TechStart Inc.',
-                quote: 'Ali delivered outstanding work on our React application. His attention to detail and performance optimization were truly impressive.'
+                quote:
+                    'Ali delivered outstanding work on our React application. His attention to detail and performance optimization were truly impressive.',
             },
             item2: {
                 name: 'James Carter',
                 role: 'Project Manager',
                 company: 'CloudMatrix',
-                quote: 'Working with Ali was a seamless experience. He transformed our complex requirements into a clean, responsive, and highly interactive user interface.'
+                quote:
+                    'Working with Ali was a seamless experience. He transformed our complex requirements into a clean, responsive, and highly interactive user interface.',
             },
             item3: {
                 name: 'Emily Davis',
                 role: 'Founder',
                 company: 'Webify Labs',
-                quote: 'His deep understanding of Tailwind CSS and modern React patterns brought our design to life perfectly. The site is fast, intuitive, and looks stunning.'
+                quote:
+                    'His deep understanding of Tailwind CSS and modern React patterns brought our design to life perfectly. The site is fast, intuitive, and looks stunning.',
             },
             item4: {
                 name: 'David Kim',
                 role: 'Lead Developer',
                 company: 'NexaSoft',
-                quote: 'A highly reliable frontend developer. Ali\'s ability to adapt to new tools and deliver bug-free, pixel-perfect results on time is truly commendable.'
-            }
-        }
+                quote:
+                    "A highly reliable frontend developer. Ali's ability to adapt to new tools and deliver bug-free, pixel-perfect results on time is truly commendable.",
+            },
+        },
     },
+
     // ==========================================
     // Contact
     // ==========================================

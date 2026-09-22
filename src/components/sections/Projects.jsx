@@ -8,9 +8,9 @@ import {
     Briefcase,
     ChevronLeft,
     ChevronRight,
-    Globe,
-    Palette,
+    Smartphone,
     Target,
+    Wrench,
 } from 'lucide-react';
 
 import { useTranslation } from 'react-i18next';
@@ -124,8 +124,9 @@ function Projects() {
 
     const categoryIcons = {
         all: Target,
-        webApps: Globe,
-        uiComponents: Palette,
+        pwa: Smartphone,
+        client: Briefcase,
+        tools: Wrench,
     };
 
     const hasNavigation =
